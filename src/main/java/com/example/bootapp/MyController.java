@@ -1,4 +1,4 @@
-/*package com.example.bootapp;
+package com.example.bootapp;
 
 
 import org.springframework.web.bind.annotation.GetMapping;
@@ -11,4 +11,4 @@ public class MyController {
     public String sayHello() {
         return "Hello, World!";
     }
-}*/
+}
