@@ -1,6 +1,5 @@
 pipeline {
     agent any
-
     stages {
         stage('Checkout') {
             steps {
@@ -10,7 +9,7 @@ pipeline {
 
         stage('Build') {
             steps {
-                sh 'clean verify sonar:sonar -Dsonar.projectKey=Maven-project -Dsonar.projectName='Maven-project' -Dsonar.host.url=http://localhost:9000 -Dsonar.token=sqa_e5fc5c4dca99b5a81d86e3de45e77da40bb8f845 '
+                sh 'clean verify sonar:sonar -Dsonar.projectKey=Maven-project -Dsonar.projectName=\'Maven-project\' -Dsonar.host.url=http://localhost:9000 -Dsonar.token=sqa_e5fc5c4dca99b5a81d86e3de45e77da40bb8f845 '
             }
         }
 
