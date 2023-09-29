@@ -16,8 +16,8 @@ pipeline {
 
         stage('Deploy to Tomcat') {
             steps {
-                powershell 'cp target/*.war ${CATALINA_HOME}/webapps/'
-            }
+                bat 'xcopy /Y /Q target\\*.war %CATALINA_HOME%\\webapps\\'
+                 }
         }
     }
 }
